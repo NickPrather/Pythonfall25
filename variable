@@ -1,0 +1,11 @@
+kilograms1 = 25
+kilograms2 = 135
+kilograms3 = 100
+kilograms4 = 225
+
+conversion_factor = 2.20462
+
+print(kilograms1, "Kilograms is equal too", kilograms1 * conversion_factor, "pounds")
+print(kilograms2, "Kilograms is equal too", kilograms2 * conversion_factor, "pounds")
+print(kilograms3, "Kilograms is equal too", kilograms3 * conversion_factor, "pounds")
+print(kilograms4, "Kilograms is equal too", kilograms4 * conversion_factor, "pounds")
