@@ -1,24 +1,22 @@
 """
-Prompt the user to enter five names.
-Store the names in a list.
-Sort the list using the Bubble Sort algorithm.
-Reverse the sorted list using a Python list method.
-Print both the sorted and reversed lists.
+Create a list representing 20 seats, numbered 1 to 20.
+Display the list of available seats to the customer.
+Prompt the customer to select a seat by entering its number. Entering '0' ends the purchase process.
+Remove the selected seat from the list of available seats and display the updated list.
+If the customer selects an invalid or already sold seat, display a friendly error message and prompt them to try again.
+Ensure the program gracefully handles all scenarios and is user-friendly.
 """
-#asks user to input 5 names and stores them in a list
-names = [input("enter a name: ") for _ in range(5)]
-names = [name.lower() for name in names]
-# starts bubble algorithm to sort the list
-swapped = True
-while swapped:
-    swapped = False
-    for i in range(len(names) - 1):
-        if names[i] > names[i + 1]:
-            names[i], names[i + 1] = names[i + 1], names[i]
-            swapped = True
-
-#prints sorted list
-print("Sorted list:", names)
-#reverses the sorted list and then prints the reversed list
-names.reverse()
-print("Reversed list:", names)
+# creates a list of seats numbered 1 to 20
+seats = list(range(1, 21))
+# loop to allow multiple seat selections until the user is done selecting
+while True:
+    print("available seats:", seats)
+    picked = int(input("pick a seat enter 0 when you are done: "))
+    if picked == 0:
+        break
+    if picked in seats:
+        seats.remove(picked)
+        print("seat number",picked,"has been sold to you")
+    else:
+        print("invalid seat please try again")
+        
