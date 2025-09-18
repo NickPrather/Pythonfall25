@@ -21,3 +21,4 @@ while swapped:
 print("Sorted list:", names)
 #reverses the sorted list and then prints the reversed list
 names.reverse()
+print("Reversed list:", names)
