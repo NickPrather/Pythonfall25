@@ -1,0 +1,10 @@
+Coke, Large, 3.0, Medium, 2.5, Small, 2.0
+Iced Tea, Large, 2.5, Medium, 2.25, Small, 1.50
+
+Burger, Double, 10.0, Single, 7.5
+Hot Dog, Chili, 5.0, Plain, 3.0
+
+Fries, Large, 3.0, Medium, 2.5, Small, 2.0
+Cheese Curds, Large, 3.5, Medium, 3.0, Small, 2.75
+
+Icecream, Large, 5.0, Medium, 4.0, Small, 4.5
