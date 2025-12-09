@@ -14,6 +14,13 @@ from menu import Menu
 from order import Order
 from receipt import Receipt
 def main():  # main function to run the game
+     """
+    main function that runs the restraunt ordering game
+    first it loads the menu from the text file then it displays the menu to the user
+    then it allows the user to order items until they type 'done'
+    then it generates, saves, and displays the recipt to the user.
+    """
+
     menu = Menu() 
     menu.load_menu("menu_items.txt")  # Fixed: removed incorrect directory prefix 
     order = Order() # creates an order object
@@ -44,6 +51,7 @@ https://www.geeksforgeeks.org/python/how-to-open-a-file-using-the-with-statement
 
 how i found a add_item method:
 https://www.geeksforgeeks.org/python/set-add-python/
+
 
 
 
