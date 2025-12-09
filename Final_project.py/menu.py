@@ -15,6 +15,9 @@ class Menu:
         self.items = new_items # loads menu from file
 
     def load_menu(self, file_name):
+         """
+        Loads menu from the text file and displays it in a readable format 
+        """
         with open(file_name, "r") as file:
             for line in file:
                 line = line.strip()
@@ -44,4 +47,5 @@ class Menu:
                 if c == cat: # check if item catagory matches current catagory
                     print(f" - {name}: ${price:.2f}") 
         print()
+
 
